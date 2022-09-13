@@ -9,7 +9,7 @@ def new_game():
     print(key)
     for i in options[question_num-1]:
       print(i)
-    guess = input("Seleccione (A, B, C o D): ")
+    guess = input("seleccione (A, B, C o D): ")
     guess = guess.upper()
     guesses.append(guess)
 
@@ -21,10 +21,10 @@ def new_game():
 #..............................
 def check_answer(answer, guess):
   if answer == guess:
-    print("Exelente")
+    print("exelente")
     return 1
   else:
-    print("Incorrecto")
+    print("incorrecto")
     return 0
 #..............................
 def display_score(correct_guesses, guesses):
